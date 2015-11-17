@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Alex's IS Blog</title>
+    <title>Splitting Sentences</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -73,85 +73,35 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/space1.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>IS Blog</h1>
-                        <hr class="small">
-                        <span class="subheading">A blog documenting my progress on my independent study.</span>
+                    <div class="post-heading">
+                        <h1>Assigning values to each word</h1>
+                        <h2 class="subheading">Essentially the conclusion of the general data structure  </h2>
+                        <span class="meta">Alex <a href="#"></a> on November 12, 2015</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-              <div class="post-preview">
-               <a href="post4.html">
-                   <h2 class="post-title">
-                       Finished general data structure present in analysis.js
-                   </h2>
-                   <h3 class="post-subtitle">
-                       Finished the over arching data structure in analysis.js
-                   </h3>
-               </a>
-               <p class="post-meta">Alex <a href="#"></a> on November 12, 2015</p>
-              </div>
-              <hr>
-              <div class="post-preview">
-               <a href="post3.html">
-                   <h2 class="post-title">
-                       Continued work on analysis.js
-                   </h2>
-                   <h3 class="post-subtitle">
-                       Got analysis.js to split into sentences
-                   </h3>
-               </a>
-               <p class="post-meta">Alex <a href="#"></a> on November 5, 2015</p>
-              </div>
-              <hr>
-                   <div class="post-preview">
-                    <a href="post2.html">
-                        <h2 class="post-title">
-                            Started to work on analysis.js
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Working on the plagerism project
-                        </h3>
-                    </a>
-                    <p class="post-meta">Alex <a href="#"></a> on October 28, 2015</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Figured out how to implement the search API's
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Added code on bitbucket and will be working off of there.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Alex <a href="#"></a> on October 25, 2015</p>
-                </div>
-                <hr>
+                  <p>I finished up the overall structure of the algorithm. I also added pretty heavy comments to the code to help readers understand what's going on. </p>
 
+                  <p>The code starts by forming a dictionary with words and values. Currently I manually inputted it, later we're going to import it from other databases. It then takes a text string, again one that I currently added but we will later have the user input. Then it strips the string of "crap" words and breaks it into sentences. After breaking into sentences it breaks each of those sentences into words comparing those words to the words in the dictionary. If there's an overlap it adds that value to the value in the sentence. This process gives each sentence and value and a subsequent "score."
 
-
-                <!-- Pager -->
-                <!--<ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>-->
+                    <p>I also added the upload function to the webpage and gave it a UI. In the UI I allow the user to interact with it and explain how the code works</p>
+                  </div>
             </div>
         </div>
-    </div>
+    </article>
 
     <hr>
 
@@ -162,14 +112,13 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="http://twitter.com/AlexKFine">
+                            <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
-<!--
                         <li>
                             <a href="#">
                                 <span class="fa-stack fa-lg">
@@ -178,9 +127,8 @@
                                 </span>
                             </a>
                         </li>
--->
                         <li>
-                            <a href="http://github.com/AlexFine/IS">
+                            <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -188,7 +136,6 @@
                             </a>
                         </li>
                     </ul>
-<!--                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>-->
                 </div>
             </div>
         </div>

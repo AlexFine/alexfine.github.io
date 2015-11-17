@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Alex's IS Blog</title>
+    <title>Splitting Sentences</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -73,85 +73,38 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/space1.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>IS Blog</h1>
-                        <hr class="small">
-                        <span class="subheading">A blog documenting my progress on my independent study.</span>
+                    <div class="post-heading">
+                        <h1>Splitting Paragraph into Workable Sentences</h1>
+                        <h2 class="subheading">Learned more about regex expressions.  </h2>
+                        <span class="meta">Alex <a href="#"></a> on November 5, 2015</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>I worked on implementing regex expressions into my code and learned how to break apart sentences. I used the source <a href="https://www.regex101.com">regex 101 </a> which helps to show what regex expressions do what and how to work with them.  </p>
 
-              <div class="post-preview">
-               <a href="post4.html">
-                   <h2 class="post-title">
-                       Finished general data structure present in analysis.js
-                   </h2>
-                   <h3 class="post-subtitle">
-                       Finished the over arching data structure in analysis.js
-                   </h3>
-               </a>
-               <p class="post-meta">Alex <a href="#"></a> on November 12, 2015</p>
-              </div>
-              <hr>
-              <div class="post-preview">
-               <a href="post3.html">
-                   <h2 class="post-title">
-                       Continued work on analysis.js
-                   </h2>
-                   <h3 class="post-subtitle">
-                       Got analysis.js to split into sentences
-                   </h3>
-               </a>
-               <p class="post-meta">Alex <a href="#"></a> on November 5, 2015</p>
-              </div>
-              <hr>
-                   <div class="post-preview">
-                    <a href="post2.html">
-                        <h2 class="post-title">
-                            Started to work on analysis.js
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Working on the plagerism project
-                        </h3>
-                    </a>
-                    <p class="post-meta">Alex <a href="#"></a> on October 28, 2015</p>
+                    <p>In the code I implemented the regex expression <code>/(.+?([A-Z].)[\.|\?](?:['")\\\s]?)+?\s?)/igm </code> which breaks apart the text into sentences really nicely. </p>
+
+                    <p>The regex expression first goes over the text line by line by using <code>.+?</code>. Next, it selects what information it will be working with and uses the <code>A-Z</code> to tell teh computer to look at letters. It's important to note that I still need to add in numbers and this regex expression won't look at numbers. After it selects what it's looking for it will use <code>[\.|\?]</code> to break it apart my apparent sentences and <code> ?:['")\\\s </code> to ignore all the whitespace. </p>
+
+                    <p>Once the algorithm breaks the text into sentences it loops through the text using <code>while ((match = pattern.exec(words)) != null) { </code>. I then push each item to an array I made called <code>var sentenceArray = [];</code> and print it to an ordered list to make sure it worked correctly.  </p>
+
+                    <p>You can view these specific changes on lines 93-112 in the code. </p>
                 </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Figured out how to implement the search API's
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Added code on bitbucket and will be working off of there.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Alex <a href="#"></a> on October 25, 2015</p>
-                </div>
-                <hr>
-
-
-
-                <!-- Pager -->
-                <!--<ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>-->
             </div>
         </div>
-    </div>
+    </article>
 
     <hr>
 
@@ -162,14 +115,13 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="http://twitter.com/AlexKFine">
+                            <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
-<!--
                         <li>
                             <a href="#">
                                 <span class="fa-stack fa-lg">
@@ -178,9 +130,8 @@
                                 </span>
                             </a>
                         </li>
--->
                         <li>
-                            <a href="http://github.com/AlexFine/IS">
+                            <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -188,7 +139,6 @@
                             </a>
                         </li>
                     </ul>
-<!--                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>-->
                 </div>
             </div>
         </div>
