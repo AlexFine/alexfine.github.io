@@ -18,11 +18,11 @@ body {
   background: #353138;
   background: -moz-radial-gradient(center, ellipse cover,  #353138 0%, #1a181c 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #353138), color-stop(100%, #1a181c));
-  background: -webkit-radial-gradient(center, ellipse cover,  #d3d3d3 0%,#bdbdbd 100%);
-  background: -o-radial-gradient(center, ellipse cover,  #d3d3d3 0%,#bdbdbd 100%);
-  background: -ms-radial-gradient(center, ellipse cover,  #d3d3d3 0%,#bdbdbd 100%);
-  background: radial-gradient(ellipse at center,  #d3d3d3 0%,#bdbdbd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d3d3d3', endColorstr='#bdbdbd', GradientType=1);
+  background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f5 0%,#bdbdbd 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #f0f0f5 0%,#bdbdbd 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #f0f0f5 0%,#bdbdbd 100%);
+  background: radial-gradient(ellipse at center,  #f0f0f5 0%,#bdbdbd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#f0f0f5', endColorstr='#bdbdbd', GradientType=1);
 }
 .container {
   margin: 0;
@@ -49,12 +49,12 @@ body {
   margin: 100px auto;
   position: relative;
   background: #62278d;
-  background: -moz-linear-gradient(top,  #62278d 0%, #2cc09b 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62278d), color-stop(100%,#2cc09b));
-  background: -webkit-linear-gradient(top,  #62278d 0%,#2cc09b 100%);
-  background: -o-linear-gradient(top,  #62278d 0%,#2cc09b 100%);
-  background: -ms-linear-gradient(top,  #62278d 0%,#2cc09b 100%);
-  background: linear-gradient(to bottom,  #62278d 0%,#2cc09b 100%);
+  background: -moz-linear-gradient(top,  #FFA500 0%, #FF6347 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFA500), color-stop(100%,#FF6347));
+  background: -webkit-linear-gradient(top,  #FFA500 0%,#FF6347 100%);
+  background: -o-linear-gradient(top,  #FFA500 0%,#FF6347 100%);
+  background: -ms-linear-gradient(top,  #FFA500 0%,#FF6347 100%);
+  background: linear-gradient(to bottom,  #FFA500 0%,#FF6347 100%);
   width: 300px;
   border-width: 20px 0;
   border-style: solid;
@@ -111,12 +111,12 @@ input.toggle:checked ~ .menu {
   border-style: solid;
   border-color: #fff;
   background: #62278d;
-  background: -moz-linear-gradient(top,  #62278d 0%, #2cc09b 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62278d), color-stop(100%,#2cc09b));
-  background: -webkit-linear-gradient(top,  #62278d 0%,#2cc09b 100%);
-  background: -o-linear-gradient(top,  #62278d 0%,#2cc09b 100%);
-  background: -ms-linear-gradient(top,  #62278d 0%,#2cc09b 100%);
-  background: linear-gradient(to bottom,  #62278d 0%,#2cc09b 100%);
+  background: -moz-linear-gradient(top,  #FFA500 0%, #FF6347 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF6347), color-stop(100%,#FF6347));
+  background: -webkit-linear-gradient(top,  #FFA500 0%,#FF6347 100%);
+  background: -o-linear-gradient(top,  #FFA500 0%,#FF6347 100%);
+  background: -ms-linear-gradient(top,  #FFA500 0%,#FF6347 100%);
+  background: linear-gradient(to bottom,  #FFA500 0%,#FF6347 100%);
   pointer-events: none;
 }
 .menu .top {
