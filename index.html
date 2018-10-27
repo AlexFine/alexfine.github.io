@@ -1,161 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
+  <meta charset="UTF-8">
+  <title>AVA</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>AVA</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
-
-    <!-- Theme CSS -->
-    <link href="css/new-age.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+      <link rel="stylesheet" href="css/style.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
-<body id="page-top">
+<body>
+<div class="header gilla">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-            </div>
+  <div class="headline" style="margin-bottom:15%;">
+    <h2 style="text-align:center; margin-right:16px; font-weight:100">AVA </h2>
+    <div class="type-js">
+      <h4 class="text-js" style="font-weight:100">Advanced Volatility Arbitrage</h4>
+    </div>
+    <!-- <h1 style="margin-bottom:20px;">AVA</h1> -->
+  </div>
+  <a href="#" onclick="ScrollTo('values')" class="arrow-container">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </a>
+</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#team">Philosophy & Team </a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#team">Investment Team</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#ava">Introducing AVA</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<!-- <a  onclick="ScrollTo('values')">Test</a> -->
 
-    <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="header-content">
-                    <div class="header-content-inner">
-                        <h1>AVA</h1>
-                        <p>Invest easy. Invest well. </p>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-    </header>
-<!--
-    <section id="philosophy" class="download bg-primary text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2" style="padding:0px; text-align:center; color:#7D7D7D;">
-                    <h3 style="font-size:40px; color:white">Investment Philosophy</h3>
-                    <p style="color:white"> We believe in facts, patterns, and trends. We don't believe in qualitative analysis and arbitrary diversification. We trade algorithmically. We combine state of the art neural networks with massive data-sets to make statistically backed trade decisions. <br> </p>
+<div class="section2" id="values">
+  <div class="headline" style="margin-bottom:15%;">
+    <h3 >Values </h3>
 
-                </div>
-            </div>
-        </div>
-    </section> -->
+      <div class="text_section">
+        <hr class="style-two">
+          <ol style="font-size:20px; margin-top:15px; padding:0px; width:30%; text-align:center; margin-left:35%">
+            <li>Customer First</li>
+            <li>Make Money</li>
+            <li>Customer First </li>
+          </ol>
+          <p style="font-size:18px;">
+          VALUES. Everything is done to improve your experience investing with AVA. <br><br>
 
-    <section id="team" class="download bg-team text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2" style="padding:0px; text-align:center; color:#7D7D7D;">
-                    <h3 style="font-size:40px; color:#7AFF7A">Philosophy & Team</h3>
-                    <p style="color:#E5FFE5"> We believe in facts, patterns, and trends. We don't believe in qualitative analysis and arbitrary diversification. We trade algorithmically. We combine state of the art neural networks with massive data-sets to make statistically backed trade decisions. <br> </p>
+          <!-- AVA is customer focused. Our primary goal is to make you money. <br><br> -->
 
-                    <div class="col-md-6">
-                      <h3 style="color:#7AFF7A">George Sivulka</h3>
-                      <p style="color:#E5FFE5">NASA intern - age 14<br><br> Eng. multiphysics simulations - age 16<br><br>Detecting dark matter at SLAC  - age 18<br><br>E^(iPI) = -1 tatooed on arm - age 20<br><br> Math & Philosophy @ Stanford  </p>
-                    </div>
-                    <div class="col-md-6">
-                      <h3 style="color:#7AFF7A">Alex Fine</h3>
-                      <p style="color:#E5FFE5">Created a search engine - age 12<br><br> Search-methodology patented - age 14<br><br>Founded a CV & ML company - age 16<br><br>CV & ML company acquired - age 18<br><br> Math & Computer Science @ Stanford  </p>
-                    </div>
+          <!-- AVA uses a state of the art RNN trained on millions of discrete data points to make predictions on price fluctuation.
 
-                </div>
-            </div>
-        </div>
-    </section>
+           an artificial intelligence that predicts cyptocurrency markets. <br><br>
 
-    <section id="ava" class="download bg-ava text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2" style="padding:0px; text-align:center; color:#7D7D7D;">
-                    <h3 style="font-size:40px; color:#BDBDBD">Introducing. AVA.</h3>
-                    <p style="color:#D5D5D5">AVA is an artificial intelligence. She makes the trade decisions for the fund. AVA reads thousands of tweets every second. She reads the New York Time, CNN, and dozens of other news sites everyday. She feels their sentiments. She identifies trends. She makes over 1,000 predictions/minute about how over 100 cryptocurrencies are going to behave in the future. She sends her predictions to our trading bot, which executes the trades. <br> </p>
+        Really, really well. <br><br>
+        Trained on millions of unqiue datapoints that read the market sentiment across major news publications, social media platforms, and cyrptocurrency pages hes on the internet, AVA predicts fluxuations in these volatile markets before they happen. <br>
 
-                </div>
-            </div>
-        </div>
-    </section>
+        <br>You don't have to be a millionare, a investing guru, or a Wall Street fund to partner with us. Invest any amount, whenever you want. All you need is a computer.<br> -->
+      </p>
+      </div>
+    </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2018 Alex Fine. All Rights Reserved.</p>
-            <ul class="list-inline">
-<!--
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
--->
-            </ul>
-        </div>
-    </footer>
+</div>
 
-    <!-- jQuery -->
-    <script src="lib/jquery/jquery.min.js"></script>
+<div class="section3" id="tech">
+  <div class="headline" style="margin-bottom:0%;">
+    <h3 >What We Do </h3>
+      <div class="text_section">
+        <hr class="style-two">
+        <p style="margin-bottom:20%; width:60%; margin-left:20%;"> We are a cryptocurrency hedge fund that takes advantage of high volatility to mitigate investor risk. <br><br>
+          TECHNICALS. Give a little bit of a technical speech here. Relate our algorithm design back to the customer how we're trying to mitigate risk.
+          <!-- AVA is customer focused. Our primary goal is to make you money. <br><br> -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+          <!-- AVA uses a state of the art RNN trained on millions of discrete data points to make predictions on price fluctuation.
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+           an artificial intelligence that predicts cyptocurrency markets. <br><br>
 
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
+        Really, really well. <br><br>
+        Trained on millions of unqiue datapoints that read the market sentiment across major news publications, social media platforms, and cyrptocurrency pages hes on the internet, AVA predicts fluxuations in these volatile markets before they happen. <br>
+
+        <br>You don't have to be a millionare, a investing guru, or a Wall Street fund to partner with us. Invest any amount, whenever you want. All you need is a computer.<br> -->
+      </p>
+      </div>
+    </div>
+
+</div>
+
+<div class="section4" id="story">
+  <div class="headline" style="margin-bottom:15%;">
+    <h3 >Who We Are </h3>
+      <div class="text_section">
+        <p style="margin-bottom:0%; margin-left:20%; width:60%;"> STORY. We're math geeks from Stanford. We met in an advanced topology course. We're smart as shit. We're the kids that spend an entire summer coding. Idk. A cool STORY here. AGAIN Relate to customers. also TRUST. ANDY trusts us. People trust us. Get famous people to invest.
+          <!-- AVA is customer focused. Our primary goal is to make you money. <br><br> -->
+
+          <!-- AVA uses a state of the art RNN trained on millions of discrete data points to make predictions on price fluctuation.
+
+           an artificial intelligence that predicts cyptocurrency markets. <br><br>
+
+        Really, really well. <br><br>
+        Trained on millions of unqiue datapoints that read the market sentiment across major news publications, social media platforms, and cyrptocurrency pages hes on the internet, AVA predicts fluxuations in these volatile markets before they happen. <br>
+
+        <br>You don't have to be a millionare, a investing guru, or a Wall Street fund to partner with us. Invest any amount, whenever you want. All you need is a computer.<br> -->
+      </p>
+      </div>
+    </div>
+
+</div>
+
+<div class="section5" id="fund">
+  <div class="headline" style="margin-bottom:15%; width:100%;">
+    <h3 >Funds </h3>
+    <hr class="style-two">
+    <div class="row" style="margin-left:10%;">
+      <!-- <div class="column-sm" style="">
+        <h5></h5>
+        <p><br>Some text..</p>
+      </div> -->
+      <div class="column" style="">
+        <h5>ETH Long</h5>
+        <p>Good for investors interested longing ETH with a statistical advantage. </p>
+        <p>Min Investment: $50k</p>
+        <p>Currency: ETH</p>
+        <p>Features: RNN Predictions </p>
+        <p>Fees: Waterfall. 0% AUM.  </p>
+        <p>Benchmark Currency: ETH </p>
+
+      </div>
+      <div class="column" style="">
+        <h5>BTC Long</h5>
+        <p>Good for investors interested longing BTC with a statistical advantage. </p> 
+        <p>Min Investment: $50k</p>
+        <p>Currency: BTC</p>
+        <p>Features: RNN Predictions </p>
+        <p>Fees: Waterfall. 0% AUM.  </p>
+        <p>Benchmark Currency: BTC </p>
+      </div>
+      <div class="column" style="">
+        <h5>Crypto ETF</h5>
+        <p>Interested in investing in crypto but not sure where to go. We make the best statistical decisions every second. </p>
+        <p>Min Investment: $100k</p>
+        <p>Currency: LTC, BCH, BTC, ETH</p>
+        <p>Features: RNN Predictions & Market Hedging </p>
+        <p>Fees: Waterfall. 0% AUM.  </p>
+        <p>Benchmark Currency: USD </p>
+
+      </div>
+      </div>
+    </div>
+</div>
+
+<a href="#" class="credit" target="_blank">AVA Copyright 2018 Caymen Islands</a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
 
 </body>
 
