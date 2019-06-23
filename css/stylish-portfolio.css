@@ -87,14 +87,15 @@ h6 {
 
 .masthead {
   min-height: 30rem;
+  color:white;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/thehouseblur.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/thehouseblur.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/space1.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/space1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -333,14 +334,17 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
-  color: #fff !important;
+  /* background-color: #e0f5fc !important; */
+  background-color: #ffffff00;
+  border-color: #e0f5fc !important;
+  border-width: 3px;
+  color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #4d2463 !important;
+  border-color: #a76dc6 !important;
+  border-width:3px;
 }
 
 .btn-secondary {
