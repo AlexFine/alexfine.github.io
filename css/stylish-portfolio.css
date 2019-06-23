@@ -369,7 +369,12 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #4d2463 !important;
+}
+
+.bg-primary-2{
+  background-color: white;
+  color: #4d2463;
 }
 
 .text-primary {
