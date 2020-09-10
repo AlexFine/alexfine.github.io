@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title> Multiline Text Field </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer/">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,800&display=swap');
+
+
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .carousel-item {
+        height:600px;
+        width:auto;
+      }
+
+      h1, h2, h3 {
+        font-weight: 700;
+      }
+
+      video {
+        border-radius: 5px;
+      }
+
+      .code-block {
+        background:rgba(200,200,200, 0.05);
+        padding:15px;
+        border-radius: 10px;
+        border: 1px solid rgba(200, 200, 200, 0.6);
+        font-weight:400;
+      }
+
+      .inline-block {
+        background:rgba(200,200,200, 0.4);
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:2px;
+        padding-bottom:2px;
+        border-radius: 5px;
+        font-weight:600;
+      }
+
+      li {
+        margin:8px;
+      }
+
+      code .key{color:#AA0C91}
+      code .title{color:#5C2699}
+      code .string{color:#C41A16}
+      code .number{color:#1C00CF}
+      code .comment{color:#007400}
+      code .method{color:#2E0D6E}
+      code .preprocessor{color:#643820}
+      code .key{color:#AA0C91}
+      code .pointer{color:#3F6E74}
+      code .enum{color:#60aab3};
+
+      .inline-code {
+        padding:8px;
+        background:rgba(200,200,200, 1);
+      }
+
+      .instructions-img {
+        border-radius: 5px;
+        box-shadow: 0 0 7px 5px #ddd;
+      }
+
+      .code-classic {
+        color:rgba(40, 40, 40, 0.8);
+      }
+
+      .indent {
+        margin-left:30px;
+      }
+
+      .microcopy {
+        font-size:10pt;
+        color:rgba(80, 80, 80, 0.8)
+      }
+
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+          <h1 class="mt-5"> Multiline Text Field </h1>
+          <hr>
+          <p class="lead"> A multiline text field built in SwiftUI designed to support all availible functionality of the native single line textfield. </p>
+
+
+          <h2 class="mt-5"> IRL </h2>
+          <hr>
+          <div class="img-box" style="width:100%;">
+            <a href="../images/multilinebasic2.png" target="_blank"><img src="../images/multilinebasic2.png" style="width:100%;"></a>
+            <p class="microcopy" style="text-align: center;"> Standalone implementation </p>
+          </div>
+
+          <div class="img-box" >
+            <video width="100%" controls loop>
+              <source src="../videos/mltfliv.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="microcopy" style="text-align: center;"> Implemented in a production app </p>
+          </div>
+
+
+          <h2 class="mt-5"> Get Started </h2>
+          <hr>
+          <div class="code-block">
+          <pre><code class="swift language-swift"><span class="key">import</span> SwiftUI
+<span class="key">import</span> MultilineTextField
+
+<span class="key">struct</span> <span class="pointer">ContentView</span>: <span class="title">View</span> {
+    <span class="title">@State</span> <span class="key">var</span> <span class="pointer">text</span> = <span class="string">""</span>
+    <span class="title">@State</span> <span class="key">var</span> <span class="pointer">isActive</span> = <span class="key" style="font-weight:700">false</span>
+
+    <span class="key">var</span> body: <span class="key">some</span> <span class="title">View</span> {
+      <span class="pointer">MultilineTextField</span>(
+          text: <span class="pointer">$text</span>,
+          isEditing: <span class="pointer">$isActive</span>
+      )
+    }
+}</code></pre>
+</div>
+
+<br>
+          <p class="lead"> <code class="inline-code">MultilineTextField</code>  requires a <code>text</code> state, and an <code>isActive</code> state.
+            <br><br>
+            The <code>text</code> state stores the user entered text. The <code>isActive</code> state stores whether the user is actively interacting with the textfield.
+          <h2 class="mt-5"> Install </h2>
+          <hr>
+          <ol>
+            <li class="lead"> Download for 99¢ to get the <b>download URL</b> </li>
+            <img class="instructions-img" src="../images/instructions0.png" style="width:30%;">
+            <li class="lead"> Open XCode. Go to <span class="inline-block"> File > Swift Packges > Add Package Dependency... </span> </li>
+            <img class="instructions-img" src="../images/instructions1.png" style="width:80%;">
+            <li class="lead"> Select your current project </li>
+            <img class="instructions-img" src="../images/instructions2.png" style="width:80%;">
+            <li class="lead"> Input <b>download URL</b>. </li>
+            <img class="instructions-img" src="../images/instructions3.png" style="width:80%;">
+            <li class="lead"> Then click "Next". </li>
+            <img class="instructions-img" src="../images/instructions4.png" style="width:80%;">
+            <li class="lead"> Choose <b> Branch: master </b> </li>
+            <img class="instructions-img" src="../images/instructions5.png" style="width:80%;">
+            <li class="lead"> Click finish </li>
+            <img class="instructions-img" src="../images/instructions6.png" style="width:80%;">
+          </ol>
+
+          <h2 class="mt-5"> Inputs </h2>
+          <hr>
+          <p class="lead"> <code class="inline-code">MultilineTextField</code> supports a variety of supplementary inputs designed for additional functionality.</p>
+
+
+          <div class="indent">
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> placeholder: <span class="title"> String? </span> = <span class="key"> nil</span> </span> </code>
+              <br>Add a placeholder to your textfield.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> hasBorder: <span class="title"> Bool </span> = <span class="key"> true</span> </span> </code>
+              <br> Remove the border from the textfield. Use to either create your own custom border, or remove it altogether.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> textAlignment: <span class="pointer"> MultilineTextField.TextAlignment </span> = <span class="enum"> .left </span> </span> </code>
+              <br> Text alignment.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> placeholderAlignment: <span class="title"> Alignment </span> = <span class="enum"> .left </span> </span> </code>
+              <br> Placeholder text alignment.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> textHorizontalPadding: <span class="title"> CGFloat </span> = <span class="number"> 10 </span> </span> </code>
+              <br> Horizontal text padding.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> textVerticalPadding: <span class="title"> CGFloat </span> = <span class="number"> 15 </span> </span> </code>
+              <br> Vertical text padding.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> placeholderHorizontalPadding: <span class="title"> CGFloat </span> = <span class="number"> 15 </span> </span> </code>
+              <br> Horizontal placeholder text padding.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> placeholderVerticalPadding: <span class="title"> CGFloat </span> = <span class="number"> 15 </span> </span> </code>
+              <br> Vertical placeholder text padding.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> font: <span class="title"> UIFont </span> = <span class="enum"> Self.defaultFont </span> </span> </code>
+              <br> Font.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> textColor: <span class="title"> UIColor </span> = <span class="enum"> .label </span> </span> </code>
+              <br> Text color.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> placeholderColor: <span class="title"> Color </span> = <span class="enum"> .init(.placeholderText) </span> </span> </code>
+              <br> Placeholder text color.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> backgroundColor: <span class="title"> UIColor </span> = <span class="enum"> .clear </span> </span> </code>
+              <br> Background color.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> returnType: <span class="title"> UIReturnKeyType </span> = <span class="enum"> .default </span> </span> </code>
+              <br> Custom return key.<br>
+            </p>
+
+            <!-- <p class="lead"> <code class="code-classic"> <span class="inline-block"> contentType: <span class="pointer"> ContentType? </span> = <span class="key"> nil </span> </span> </code>
+            </p> -->
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> autocorrection: <span class="pointer"> Autocorrection </span> = <span class="enum"> .default </span> </span> </code>
+              <br> Custom autocorrection.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> autocapitalization: <span class="pointer"> Autocapitalization </span> = <span class="enum"> .sentences </span> </span> </code>
+              <br> Custom autocapitalization.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> isEditable: <span class="title"> Bool </span> = <span class="key"> true </span> </span> </code>
+              <br> Can users edit the textfield.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> isSelectable: <span class="title"> Bool </span> = <span class="key"> true </span> </span> </code>
+              <br> Can users select the textfield.<br>
+            </p>
+
+            <p class="lead"> <code class="code-classic"> <span class="inline-block"> isScrollingEnabled: <span class="title"> Bool </span> = <span class="key"> true </span> </span> </code>
+              <br> Can users scroll within the textfield when applicable.<br>
+            </p>
+
+            <p class="lead"> ... and even more not mentioned here. Download to view all customizations. </p>
+
+          </div>
+
+          <p class="lead"> To use inputs simply add them to the initialization.  </p>
+
+          <div class="code-block">
+          <pre><code class="swift language-swift"><span class="key">import</span> SwiftUI
+<span class="key">import</span> MultilineTextField
+
+<span class="key">struct</span> <span class="pointer">ContentView</span>: <span class="title">View</span> {
+    <span class="title">@State</span> <span class="key">var</span> <span class="pointer">text</span> = <span class="string">""</span>
+    <span class="title">@State</span> <span class="key">var</span> <span class="pointer">isActive</span> = <span class="key" style="font-weight:700">false</span>
+
+    <span class="key">var</span> body: <span class="key">some</span> <span class="title">View</span> {
+      <span class="pointer">MultilineTextField</span>(
+          text: <span class="pointer">$text</span>,
+          isEditing: <span class="pointer">$isActive</span>,
+          placeholder: <span class="string">"Enter feedback ..."</span>,
+          hasBorder: <span class="key">false </span>,
+          minHeight: <span class="number">150 </span>
+      )
+    }
+}</code></pre>
+</div>
+
+<br>
+
+          <h2 class="mt-5"> People </h2>
+          <hr>
+
+          <p class="lead"> Package built by <a href="#" style="text-decoration:none;"> kenmueller</a>. </p>
+
+
+
+
+        </div>
+        <div class="col-3 mt-4">
+          <p class="mt-5">
+            https://github.com/AlexFine/MultilineTextField.git
+          </p>
+          <p class="microcopy"> Thanks! We were curious if people would try to download the package if they thought it cost money. <br> <br> Just use that link and you're good to go! </p>
+          <hr>
+          <!-- Frameworks -->
+          <a href="#" class="badge badge-info">SwiftUI</a>
+          <a href="#" class="badge badge-info">Frontend</a>
+
+        </div>
+        <div class="col"></div>
+
+      </div>
+    </div>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Peach Blossom Spring © 2020</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
