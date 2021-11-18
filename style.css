@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    padding:15pt;
+    max-width: 600pt;
+}
+
+.thing {
+    padding-left:15pt;
+    padding-right:15pt;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width:600pt;
+    max-width: 100%;
+}
+
+img {
+    width: 400pt;
+    max-width: 100%;
+    padding:4pt;
+    border: 4pt solid rgba(200, 200, 200, 1.0);
+    border-radius:8pt;
+}
+
+.horizontal {
+    width: 600pt !important;
+}
+
+small {
+    color: rgb(150, 150, 150);
+}
+
+.no-border {
+    border: none !important;
+}
+
+b {
+    font-weight:800;
+}
+
+li {
+    padding-bottom:0.75rem;
+    padding-top:0.75rem;
+}
+
+/* Looks good with exactly 15 lines of css. Minimalism. */
